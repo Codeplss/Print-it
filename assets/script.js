@@ -53,7 +53,10 @@ function createDots() {
         dot.addEventListener("click", () => updateSlide(i)); // Ajoutez un gestionnaire de clic pour chaque point
         dotsContainer.appendChild(dot); // Ajoutez le point au conteneur des points
     }
+ // Sélectionne le premier point après la création
+ dotsContainer.querySelector(".dot").classList.add("dot_selected");
 }
+
 
 // Fonction pour changer de diapositive
 function changeSlide(direction) {
